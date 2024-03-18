@@ -1,0 +1,36 @@
+// creare un array di oggetti per rappresentare i membri del team.
+// Ogni membro è caratterizzato dalle seguenti informazioni:
+// nome
+// ruolo
+// foto
+
+const Membro1 = {
+    nome: 'Wayne Barnett',
+    ruolo: 'Founder & CEO',
+    foto: 'wayne-barnett-founder-ceo.jpg'    
+}
+const Membro2 = {
+    nome: 'Angela Caroll',
+    ruolo: 'Chief Editor',
+    foto: 'angela-caroll-chief-editor.jpg'    
+}
+const Membro3 = {
+    nome: 'Walter Gordon',
+    ruolo: 'Office Manager',
+    foto: 'walter-gordon-office-manager.jpg'    
+}
+const Membro4 = {
+    nome: 'Angela Lopez',
+    ruolo: 'Social Media Manager',
+    foto: 'angela-lopez-social-media-manager.jpg'    
+}
+const Membro5 = {
+    nome: 'Scott Estrada',
+    ruolo: 'Developer',
+    foto: 'scott-estrada-developer.jpg'    
+}
+const Membro6 = {
+    nome: 'Barbara Ramos',
+    ruolo: 'Graphic Designer',
+    foto: 'barbara-ramos-graphic-designer.jpg'    
+}
