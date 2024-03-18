@@ -44,12 +44,13 @@ for (let i = 0; i < MembriTeam.length; i++) {
     const Membro = MembriTeam[i] // object
     // const card = `${Membro.foto}, ${Membro.nome}, ${Membro.ruolo}`
     // console.log(card)
-    
+
 // Stampare le stesse informazioni su DOM semplicemente come stringhe
     const containerDOMElement = document.querySelector('.container');
     const cardDOMElement = document.createElement('div');
-    cardDOMElement.classList.add('col-4');
-    cardDOMElement.innerHTML += `<div class="my-4">${Membro.foto}
+    cardDOMElement.classList.add('col-4','px-3');
+    cardDOMElement.innerHTML += `<div class="py-2 my-4 bg-white">
+    <img src="./img/${Membro.foto}" alt="">
     <h4>${Membro.nome}</h4>
     <h6>${Membro.ruolo}</h6>
     </div>`;
