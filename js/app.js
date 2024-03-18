@@ -4,45 +4,47 @@
 // ruolo
 // foto
 
-const Membro1 = {
-    nome: 'Wayne Barnett',
-    ruolo: 'Founder & CEO',
-    foto: 'wayne-barnett-founder-ceo.jpg'    
-}
-const Membro2 = {
-    nome: 'Angela Caroll',
-    ruolo: 'Chief Editor',
-    foto: 'angela-caroll-chief-editor.jpg'    
-}
-const Membro3 = {
-    nome: 'Walter Gordon',
-    ruolo: 'Office Manager',
-    foto: 'walter-gordon-office-manager.jpg'    
-}
-const Membro4 = {
-    nome: 'Angela Lopez',
-    ruolo: 'Social Media Manager',
-    foto: 'angela-lopez-social-media-manager.jpg'    
-}
-const Membro5 = {
-    nome: 'Scott Estrada',
-    ruolo: 'Developer',
+const MembriTeam = [{
+    nome: "Wayne Barnett",
+    ruolo: "Founder & CEO",
+    foto: 'wayne-barnett-founder-ceo.jpg'
+},
+{
+    nome: "Angela Caroll",
+    ruolo: "Chief Editor",
+    foto: 'angela-caroll-chief-editor.jpg' 
+},
+{
+    nome: "Walter Gordon",
+    ruolo: "Office Manager",
+    foto: 'walter-gordon-office-manager.jpg'  
+},
+{
+    nome: "Angela Lopez",
+    ruolo: "Social Media Manager",
+    foto: 'angela-lopez-social-media-manager.jpg'  
+},
+{
+    nome: "Scott Estrada",
+    ruolo: "Developer",
     foto: 'scott-estrada-developer.jpg'    
-}
-const Membro6 = {
-    nome: 'Barbara Ramos',
-    ruolo: 'Graphic Designer',
+},
+{
+    nome: "Barbara Ramos",
+    ruolo: "Graphic Designer",
     foto: 'barbara-ramos-graphic-designer.jpg'    
 }
-
-const MembriTeam = [Membro1, Membro2, Membro3, Membro4, Membro5, Membro6];
-
+]
+// const MembriTeam = [Membro1, Membro2, Membro3, Membro4, Membro5, Membro6];
+console.log(`nome: ${MembriTeam[4].nome}, ruolo: ${MembriTeam[4].ruolo}, foto: ${MembriTeam[4].foto}`)
 
 // Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 // console.log(MembriTeam);
 for (let i = 0; i < MembriTeam.length; i++) {
     const Membro = MembriTeam[i] // object
-    // const card = `${Membro.foto}, ${Membro.nome}, ${Membro.ruolo}`
+    // const card = `${Membro.foto} 
+    // ${Membro.nome}
+    // ${Membro.ruolo}`
     // console.log(card)
 
 // Stampare le stesse informazioni su DOM semplicemente come stringhe
