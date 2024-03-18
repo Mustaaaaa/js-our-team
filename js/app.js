@@ -4,7 +4,7 @@
 // ruolo
 // foto
 
-const MembriTeam = [{
+const membriTeam = [{
     nome: "Wayne Barnett",
     ruolo: "Founder & CEO",
     foto: 'wayne-barnett-founder-ceo.jpg'
@@ -12,52 +12,52 @@ const MembriTeam = [{
 {
     nome: "Angela Caroll",
     ruolo: "Chief Editor",
-    foto: 'angela-caroll-chief-editor.jpg' 
+    foto: 'angela-caroll-chief-editor.jpg'
 },
 {
     nome: "Walter Gordon",
     ruolo: "Office Manager",
-    foto: 'walter-gordon-office-manager.jpg'  
+    foto: 'walter-gordon-office-manager.jpg'
 },
 {
     nome: "Angela Lopez",
     ruolo: "Social Media Manager",
-    foto: 'angela-lopez-social-media-manager.jpg'  
+    foto: 'angela-lopez-social-media-manager.jpg'
 },
 {
     nome: "Scott Estrada",
     ruolo: "Developer",
-    foto: 'scott-estrada-developer.jpg'    
+    foto: 'scott-estrada-developer.jpg'
 },
 {
     nome: "Barbara Ramos",
     ruolo: "Graphic Designer",
-    foto: 'barbara-ramos-graphic-designer.jpg'    
+    foto: 'barbara-ramos-graphic-designer.jpg'
 }
-]
+];
 // const MembriTeam = [Membro1, Membro2, Membro3, Membro4, Membro5, Membro6];
-console.log(`nome: ${MembriTeam[4].nome}, ruolo: ${MembriTeam[4].ruolo}, foto: ${MembriTeam[4].foto}`)
+console.log(`nome: ${membriTeam[4].nome}, ruolo: ${membriTeam[4].ruolo}, foto: ${membriTeam[4].foto}`);
 
 // Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 // console.log(MembriTeam);
-for (let i = 0; i < MembriTeam.length; i++) {
-    const Membro = MembriTeam[i] // object
-    // const card = `${Membro.foto} 
+const containerDOMElement = document.querySelector('.container');
+for (let i = 0; i < membriTeam.length; i++) {
+    const membro = membriTeam[i]; // object
+    // const Card = `${Membro.foto} 
     // ${Membro.nome}
-    // ${Membro.ruolo}`
-    // console.log(card)
+    // ${Membro.ruolo}`;
+    // console.log(Card);
 
 // Stampare le stesse informazioni su DOM semplicemente come stringhe
-    const containerDOMElement = document.querySelector('.container');
     const cardDOMElement = document.createElement('div');
     cardDOMElement.classList.add('col-4','px-3');
     cardDOMElement.innerHTML += `<div class="py-2 my-4 bg-white">
-    <img src="./img/${Membro.foto}" alt="">
-    <h4>${Membro.nome}</h4>
-    <h6>${Membro.ruolo}</h6>
+    <img src="./img/${membro.foto}" alt="">
+    <h4>${membro.nome}</h4>
+    <h6>${membro.ruolo}</h6>
     </div>`;
 
-    containerDOMElement.appendChild(cardDOMElement)
+    containerDOMElement.appendChild(cardDOMElement);
 }
 
     
