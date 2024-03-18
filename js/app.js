@@ -42,8 +42,19 @@ const MembriTeam = [Membro1, Membro2, Membro3, Membro4, Membro5, Membro6];
 // console.log(MembriTeam);
 for (let i = 0; i < MembriTeam.length; i++) {
     const Membro = MembriTeam[i] // object
-    const card = `${Membro.foto} 
-    ${Membro.nome} 
-    ${Membro.ruolo}`
-    console.log(card)
+    // const card = `${Membro.foto}, ${Membro.nome}, ${Membro.ruolo}`
+    // console.log(card)
+    
+// Stampare le stesse informazioni su DOM semplicemente come stringhe
+    const containerDOMElement = document.querySelector('.container');
+    const cardDOMElement = document.createElement('div');
+    cardDOMElement.classList.add('col-4');
+    cardDOMElement.innerHTML += `<div class="my-4">${Membro.foto}
+    <h4>${Membro.nome}</h4>
+    <h6>${Membro.ruolo}</h6>
+    </div>`;
+
+    containerDOMElement.appendChild(cardDOMElement)
 }
+
+    
