@@ -34,3 +34,8 @@ const Membro6 = {
     ruolo: 'Graphic Designer',
     foto: 'barbara-ramos-graphic-designer.jpg'    
 }
+
+// Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
+console.log(Membro1, Membro2, Membro3, Membro4, Membro5);
+
+// Stampare le stesse informazioni su DOM semplicemente come stringhe
