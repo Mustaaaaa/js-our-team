@@ -35,7 +35,15 @@ const Membro6 = {
     foto: 'barbara-ramos-graphic-designer.jpg'    
 }
 
-// Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
-console.log(Membro1, Membro2, Membro3, Membro4, Membro5);
+const MembriTeam = [Membro1, Membro2, Membro3, Membro4, Membro5, Membro6];
 
-// Stampare le stesse informazioni su DOM semplicemente come stringhe
+
+// Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
+// console.log(MembriTeam);
+for (let i = 0; i < MembriTeam.length; i++) {
+    const Membro = MembriTeam[i] // object
+    const card = `${Membro.foto} 
+    ${Membro.nome} 
+    ${Membro.ruolo}`
+    console.log(card)
+}
